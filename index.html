@@ -12,8 +12,10 @@
 
 <body>
     <header>
-        <img src="/img/hero.png" alt="en kamera av märke Nikon" class="hero-img">
-        <img src="/img/Logo.svg" alt="Logotyp RB Foto">
+        <div class="hero-wrapper">
+            <img src="/img/hero.png" alt="en kamera av märke Nikon" class="hero-img">
+            <img src="/img/Logo.svg" alt="Logotyp RB Foto" class="logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="/">Startsida</a></li>
@@ -21,26 +23,32 @@
                 <li><a href="/about.html">Om mig</a></li>
             </ul>
         </nav>
+
     </header>
-    <main>
-        <section>
-            <h1>Demowebbplats</h1>
-            <p>Denna webbplats är framtagen till en laboration i kursen DT200G Grafisk teknik för webb. I laborationen
-                har tre bilder redigerats. På sidan Bildredigering kan du se bilderna före och efter samt läsa hur de har
-                redigerats, och på sidan Om mig finns en presentation samt en frilagd bild på mig.</p>
-        </section>
+    <div class="container">
+        <main>
+            <section class="page-section">
+                <h1>Demowebbplats</h1>
+                <p>Denna webbplats är framtagen till en laboration i kursen DT200G Grafisk teknik för webb. I
+                    laborationen
+                    har tre bilder redigerats. På sidan Bildredigering kan du se bilderna före och efter samt läsa hur
+                    de har
+                    redigerats, och på sidan Om mig finns en presentation samt en frilagd bild på mig.</p>
+            </section>
 
-        <section class="edit-img">
-            <h2>Bildserie</h2>
-            <img src="/img/bildserie001.jpg" alt="Fiskebodar mot en klippvägg. Tre människor sitter på en brygga mellan förtöjda båtar.">
-            <img src="/img/bildserie002.jpg" alt="Tre personer som klättrar i ett snötäckt berg.">
-            <img src="/img/bildserie003.jpg" alt="En kanna på ett metallgaller över en öppen eld utomhus en vinterdag.">
-        </section>
-    </main>
-    <footer>
-        <p><strong>Av: </strong>Rasmus Bergkvist, 2026</p>
-
-    </footer>
+                <section class="index-img">
+                    <h2>Bildserie</h2>
+                    <img src="/img/bildserie001.jpg"
+                        alt="Fiskebodar mot en klippvägg. Tre människor sitter på en brygga mellan förtöjda båtar.">
+                    <img src="/img/bildserie002.jpg" alt="Tre personer som klättrar i ett snötäckt berg.">
+                    <img src="/img/bildserie003.jpg"
+                        alt="En kanna på ett metallgaller över en öppen eld utomhus en vinterdag.">
+                </section>
+        </main>
+        <footer>
+            <p><strong>Av: </strong>Rasmus Bergkvist, 2026</p>
+        </footer>
+    </div>
 </body>
 
 </html>
