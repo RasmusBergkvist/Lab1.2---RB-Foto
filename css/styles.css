@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font: 1.1em;
     line-height: 1.5;
 }
@@ -90,16 +90,16 @@ footer {
 }
 
 footer p {
-   background-color:  rgb(118, 134, 176);
-   color: white;
+    background-color: rgb(118, 134, 176);
+    color: white;
     padding: 12px 24px;
-    border-radius:16px; 
+    border-radius: 16px;
 
 }
 
 
 /**********************************************/
-/***************** INDEX  *********************/
+/***************** INDEX PAGE *****************/
 /**********************************************/
 .page-section {
     text-align: center;
@@ -109,18 +109,68 @@ footer p {
 .page-text {
     display: block;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 800px;
     text-align: center;
 }
 
 
+.index-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(118, 134, 176);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.index-images h2,
+.index-images p  {
+    width: 100%;
+    text-align: center;
+}
+
+
+.index-images a {
+    display: inline-block;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.index-images img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.index-images a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.index-images img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/************************************************/
+/***************** IMAGES PAGE *****************/
+/**********************************************/
 .section-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    background-color:  rgb(118, 134, 176);
-    color:white;
+    background-color: rgb(118, 134, 176);
+    color: white;
     padding: 2rem;
     border-radius: 8px;
 }
@@ -130,17 +180,7 @@ footer p {
     text-align: center;
 }
 
-.section-img > img {
-    width: 100%;
-    max-width: 30%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
 
-/************************************************/
-/***************** IMAGES  *********************/
-/**********************************************/
 .edit-imgs {
     display: flex;
     justify-content: space-between;
@@ -149,6 +189,7 @@ footer p {
     height: auto;
     margin-bottom: 1.5rem;
 }
+
 
 .img-box {
     flex-direction: column;
@@ -162,12 +203,12 @@ footer p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 
 /************************************************/
-/***************** ABOUT  *********************/
+/***************** ABOUT PAGE ******************/
 /**********************************************/
 
 .portrait {
@@ -177,5 +218,54 @@ footer p {
 }
 
 
+/************************************************/
+/***************** MEDIA QURIES  ***************/
+/**********************************************/
+@media (max-width: 768px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+        padding: 10px 18px;
+    }
 
 
+    .logo {
+        max-width: 90%;
+        padding: 8px 16px;
+    }
+
+    .edit-imgs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+    .edit-imgs img {
+        height: auto;
+    }
+
+    .section-img, .index-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-img a, .index-images a {
+        max-width: 100%;
+    }
+}
