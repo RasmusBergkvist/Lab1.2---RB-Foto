@@ -5,9 +5,13 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font: 1.1em;
     line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .hero-wrapper {
@@ -31,7 +35,7 @@ body {
 .logo {
     position: absolute;
     padding: 12px 24px;
-    background-color: rgba(210, 206, 199, 0.5);
+    background-color: rgba(118, 134, 176, 0.5);
     border-radius: 16px;
     max-width: 800px;
     height: auto;
@@ -56,15 +60,15 @@ nav ul {
 nav a {
     display: inline-block;
     padding: 12px 24px;
-    background-color: rgba(210, 206, 199);
+    background-color: rgb(118, 134, 176);
     border-radius: 16px;
     text-decoration: none;
-    color: black;
-    transition: background-color 0.2s ease;
+    color: white;
+    transition: background-color 0.8s ease;
 }
 
 nav a:hover {
-    background-color: rgb(153, 151, 146);
+    background-color: rgb(83, 95, 124);
 }
 
 .container {
@@ -79,44 +83,6 @@ nav a:hover {
 
 }
 
-.page-section {
-    text-align: center;
-    margin-block: 2rem;
-}
-
-.page-section p {
-    display: block;
-    margin: 0 auto;
-    max-width: 70ch;
-    width: 100%;
-}
-
-
-.index-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    background-color:  rgb(213, 209, 200);
-    padding: 2rem;
-    border-radius: 8px;
-}
-
-.index-img h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.index-img img {
-    width: 100%;
-    max-width: 30%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-
 footer {
     display: inline-block;
     margin: 0 auto;
@@ -124,8 +90,82 @@ footer {
 }
 
 footer p {
-   background-color: rgb(213, 209, 200);
+   background-color:  rgb(118, 134, 176);
+   color: white;
     padding: 12px 24px;
     border-radius:16px; 
 
 }
+
+
+/**********************************************/
+/***************** INDEX  *********************/
+/**********************************************/
+.page-section {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+.page-text {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+.section-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background-color:  rgb(118, 134, 176);
+    color:white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.section-img h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.section-img > img {
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/************************************************/
+/***************** IMAGES  *********************/
+/**********************************************/
+.edit-imgs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.img-box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+}
+
+
+.edit-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px; 
+}
+
+
+
+
+
